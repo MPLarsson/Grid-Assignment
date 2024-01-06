@@ -1,0 +1,112 @@
+main {
+    width: 100%;
+    height: 100vh;
+    background: rgb(113,220,251);
+    background: linear-gradient(180deg, rgba(113,220,251,1) 0%, rgba(157,230,251,1) 35%, rgba(241,244,245,1) 100%);
+}
+
+.grid__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 15px;
+    width: 100%;
+    height: 100vh;
+    background-color: #11012d;
+    box-shadow: 4px 4px 12px #000000;
+}
+
+.grid__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; /* For visibility of the numbers */
+}
+
+.first {
+    background-color: burlywood;
+    grid-row: 1;
+    grid-column: span 2;
+}
+
+.second {
+    /* background-color: aquamarine; */
+    grid-row: 1/3;
+    grid-column: 5/7;
+    display: grid;
+    grid-gap:15px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+}
+
+.second-box1 {
+    background-color: #d8a3a3;
+    grid-column: 1/6;
+    grid-row: 1;
+}
+
+.second-box2 {
+    background-color: #cf7474;
+    grid-column: 1/6;
+    grid-row: 2;
+}
+
+.second-box3 {
+    background-color: #b85252;
+    grid-column: 1/6;
+    grid-row: 3;
+}
+
+.third {
+    background-color: burlywood;
+    grid-row: 1 / 3;
+    grid-column: 3 / 5;
+}
+
+.fourth {
+    background-color: #7054a1;
+    grid-row: 3;
+    grid-column: span 2;
+}
+
+.fifth {
+    background-color: rgb(150, 194, 30);
+    grid-row: 2;
+    grid-column: 1/3;
+}
+
+.sixth {
+    /* background-color: brown; */
+    grid-row: 3;
+    grid-column: 3/3;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.sixth-box1 {
+    background-color: cadetblue;
+    grid-column: span 2;
+    grid-row: 1;
+    
+}
+
+.sixth-box2 {
+    background-color: cadetblue;
+    grid-column: span 2;
+    grid-row: 2;
+}
+
+.seventh {
+    background-color: crimson;
+    grid-column: 4/6;
+    grid-row: 3;
+}
+
+.eigth {
+    background-color: darkolivegreen;
+    grid-column: 6/7;
+    grid-row: 3;
+}
